@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arshia Farrokhi Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Rajdhani&display=swap"
+        rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/master.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>  
+    <video muted loop src="assets/media/video/The Weeknd - After Hours.mp4" id="video"> </video>
+    <div class="player music-container">
+        <div class="header">
+            <a target="_blank" href="http://arshiafarrokhi.com/">Arshia Farrokhi</a>Music Player
+        </div>
+        <div class="img" id="img">
+            <img src="assets/media/images/The Weeknd - After Hours.jpg">
+        </div>
+        <div class="details">
+            <h3 id="title">The Weeknd - After Hours</h3>
+            <!-- <p id="artist"></p> -->
+        </div>
+
+        <audio src="assets/media/music/The Weeknd - After Hours.mp3" id="song"></audio>
+
+
+
+        <div class="progress-container">
+            <div class="time">
+                <span id="start">0:00</span>
+                <span id="end">4:33</span>
+            </div>
+            <input type="range" id="progress" value="0">
+        </div>
+
+        <div class="action">
+
+            <button id="prevplay">
+                <i class="bx bx-skip-previous"></i>
+            </button>
+
+            <button class="play" id="play">
+                <i class="bx bx-play"></i>
+            </button>
+
+            <button id="nextplay">
+                <i class="bx bx-skip-next"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="assets/js/master.js"></script>
+
+</html>
